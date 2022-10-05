@@ -31,5 +31,5 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}/commonpp/include)
 add_executable(main main.cpp)
 target_link_libraries(main commonpp
     ${Boost_LIBRARIES}
-    ${TBB_LIBRARIES}
+    TBB::tbb
     ${CMAKE_THREAD_LIBS_INIT})
