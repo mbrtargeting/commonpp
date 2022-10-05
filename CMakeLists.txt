@@ -143,7 +143,7 @@ include_directories("${CMAKE_CURRENT_BINARY_DIR}/include")
 
 set(COMMONPP_DEPS
     ${Boost_LIBRARIES}
-    ${TBB_LIBRARIES}
+    TBB::tbb
     ${CMAKE_THREAD_LIBS_INIT}
 )
 
